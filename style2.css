@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    color: #fff;
+    font-family: system-ui, sans-serif;
+}
+
+.crud {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    color: #fff;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+input:focus {
+    background-color: #000;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.price input {
+    /* display: flex; */
+    /* justify-content: center;
+align-items: center; */
+    width: 20%;
+}
+
+#total {
+    background-color: #a00d02;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+
+#total::before {
+    content: "Total: ";
+}
+
+button {
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    background: #390053;
+    color: #fff;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #51025f;
+    letter-spacing: 1px;
+}
+
+.button-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-search button {
+    margin: 5px 0 5px 0;
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+#deleteall {
+    margin: 20px 0;
+}
+
+/* أنماط الجدول */
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    overflow-x: auto;
+}
+
+table thead,
+table tbody {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    /* تحديد عرض الخلية لتكون ثابتة */
+}
+
+table th,
+table td {
+    width: auto;
+    /* تعيين العرض ليكون تلقائيًا بناءً على محتوى الخلية */
+    padding: 8px;
+}
+
+/* أنماط الجدول للأجهزة الصغيرة */
+@media (max-width: 768px) {
+
+    th,
+    td {
+        width: 100%;
+        /* تعيين عرض الخلية ليكون 100٪ على الأجهزة الصغيرة */
+        padding: 5px;
+    }
+}
